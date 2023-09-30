@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.parent{
+     /* padding: 50px; */
+     padding:5em;   /* 1em:(default)16px  it is related to the parent*/
+    background-color: #23424A;
+    margin:0 auto;
+    width: 80%;
+} 
+
+.child{
+    /* height: 150px; */
+    font-size:1em;
+    width: 50%;
+    padding: 1em;
+    /* margin:auto; */
+    background-color: #38CFD9;
+}
+
+/* 
+use percentages rather than fixed values
+*/
+
+/* 
+if child uses % values in its width and height.That means it calculated based on parent dimensions
+*/
+
+/*
+em:default 16px .gets defined based on parent
+
+body  2em   32px
+  .
+  .
+parent 2em  {now em becomes 32px(from body)}.So parent has 32px x2 = 64px
+  .
+  .
+child 2em  64px2 = 128px
+*/
+
+
+/*
+     rem : based on root element or html
+::root{
+    font-size:16px;
+} 
+   (or)
+html{
+    font-size:16px;
+}
+
+.parent{
+    font-size:3rem;  //48px
+}
+
+.child{
+    font-size:3rem; //48px
+}
+
+
+//use em and rem for margin and padding 
+margin,padding,width,height depended on font-size 
+
+h1{
+    font-size:5em;
+    margin-bottom:1em; //margin-bottom is 6*16px
+}
+
+
+//but rem only depends on root element
+
+
+There is a best use case of em 
+in case of button
+<a class="btn">Buy</a>
+btn{
+    padding:1em 3em;
+}
+
+.btn--small{
+    font-size:0.5em;
+}
+
+//here padding depends on fontsize.scaling will be done properly
+
+use rems incase of ems to get consistent spacing(margin) between elements(since margin(em) depends on font-size(em))
+
+font size should be rem 
+padding should be "em"
+margin should be "rem"
+*/
