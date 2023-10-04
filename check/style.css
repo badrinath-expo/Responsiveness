@@ -1,0 +1,29 @@
+.one {
+    width: 600px;
+    max-width: 100%;
+  }
+  .two {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  div {
+    background: #f06d06;
+    margin: 20px auto;
+    padding: 20px;
+    width:30px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    padding: 20px;
+  }
